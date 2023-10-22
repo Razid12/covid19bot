@@ -12,11 +12,11 @@ class Log:
         db = dbConn['covid19DB']  # connecting to the database called crawlerD
         mydict = {"sessionID":sessionID,"User Intent" : intent ,"User": usermessage, "Bot": botmessage, "Date": str(self.date) + "/" + str(self.current_time)}
 
-        table = db[sessionID]
+        #table = db[sessionID]
         records = dbConn.chat_records
         records.insert_one(mydict)
 
-        table.insert_one(mydict)
+        #table.insert_one(mydict)
 
 
     def saveCases(self, search,botmessage,dbConn):
