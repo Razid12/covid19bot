@@ -11,7 +11,7 @@ class GMailClient:
     def sendEmail(self,contacts):
         #EMAIL_ADDRESS = os.environ.get('EMAIL_USER')
         #EMAIL_PASSWORD = os.environ.get('EMAIL_PASS')
-        EMAIL_ADDRESS = 'razidlathief11@gmail.com'
+        EMAIL_ADDRESS = 'razidlathief786@gmail.com'
         EMAIL_PASSWORD = 'Razid@2002'
 
         #contacts = ['razidlathief786@gmail.com']
@@ -50,6 +50,6 @@ class GMailClient:
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
             smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
             smtp.send_message(msg)
-            #print("email sent")
+            print("email sent")
     def __init__(self):
         pass
